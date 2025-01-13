@@ -17,7 +17,7 @@ def m_carlo(card1, card2, players_count, game_round, community_cards, deck):
     pub_cards_to_draw = stages[game_round]
     
     if (pub_cards_to_draw == 5):
-        burn_card(deck)
+        deck = burn_card(deck)
         for i in range(pub_cards_to_draw):
             if (i >= 3):
                 burn_card(deck)
@@ -28,7 +28,7 @@ def m_carlo(card1, card2, players_count, game_round, community_cards, deck):
                 
     elif (pub_cards_to_draw == 1 or pub_cards_to_draw == 2):
         for i in range(pub_cards_to_draw):
-            burn_card(deck)
+            deck = burn_card(deck)
             if len(deck) > 0:
                 card = random.choice(deck)
                 community_cards.append(card)
