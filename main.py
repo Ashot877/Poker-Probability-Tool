@@ -75,10 +75,10 @@ def main():
                 
     count = 0
     
-    for i in range(50):
+    for i in range(10):
         print(i)   
         count += m_carlo(first_card, second_card, players_count, game_round, community_cards, deck)
 
-    print(f"result: {count/50}")
+    print(f"result: {count/10}")
 
 main()

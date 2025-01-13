@@ -1,7 +1,9 @@
 from itertools import combinations
 from collections import Counter
 from compare_combination import *
+from time_ import *
 
+@time_t
 def best_combinations(cards):
 
     combo_list = []
